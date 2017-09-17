@@ -54,7 +54,7 @@ def commands():
 
 
 
-def translate_commands_to_wheel(pair)
+def translate_commands_to_wheel(pair):
 
 	if pair[0] == f:
 		wheels_dir = (lf,rf)
