@@ -18,7 +18,7 @@ def commands():
 		print ''
 		print '----------------------------Command # {}--------------------------'.format(counter)
 
-		direction = raw_input('Enter direction [(F)orward, (B)ackward, (L)eft, (R)ight]: ').lower()
+		direction = raw_input('Enter direction [(F)orward, (B)ackward, (L)eft-pivot, (R)ight-pivot]: ').lower()
 
 		time = raw_input('Enter duration in seconds: ')
 
@@ -56,16 +56,16 @@ def commands():
 
 def translate_commands_to_wheel(pair):
 
-	if pair[0] == f:
+	if pair[0] == 'f':
 		wheels_dir = (lf,rf)
 
-	elif pair[0] == b:
+	elif pair[0] == 'b':
 		wheels_dir = (lr,rr)
 
-	elif pair[0] == r:
+	elif pair[0] == 'r':
 		wheels_dir = (lf, rr)
 
-	elif pair[0] == l:
+	elif pair[0] == 'l':
 		wheels_dir = (lr, rf)
 
 	# Return the tuble of (wheels & dirs) and the duration.
