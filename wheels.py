@@ -34,32 +34,32 @@ def wheel(wheel_dir, duration):
     
     if wheel_dir == ('lf','rf'):
         print 'Forward for {} seconds'.format(duration)
-        GPIO.output(lf, GPIO.HIGH)
-        GPIO.output(rf, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(15, GPIO.HIGH)
         time.sleep(duration)
-        GPIO.output(lf, GPIO.LOW)
-        GPIO.output(rf, GPIO.LOW)
+        GPIO.output(13, GPIO.LOW)
+        GPIO.output(15, GPIO.LOW)
 
     elif wheel_dir == ('lr','rr'):
         print 'Backward for {} seconds'.format(duration)
-        GPIO.output(lr, GPIO.HIGH)
-        GPIO.output(rr, GPIO.HIGH)
+        GPIO.output(11, GPIO.HIGH)
+        GPIO.output(12, GPIO.HIGH)
         time.sleep(duration)
-        GPIO.output(lr, GPIO.LOW)
-        GPIO.output(rr, GPIO.LOW)
+        GPIO.output(11, GPIO.LOW)
+        GPIO.output(12, GPIO.LOW)
 
     elif wheel_dir == ('lf', 'rr'):
         print 'Rightward pivot for {} seconds'.format(duration)
-        GPIO.output(lf, GPIO.HIGH)
-        GPIO.output(rr, GPIO.HIGH)
+        GPIO.output(13, GPIO.HIGH)
+        GPIO.output(12, GPIO.HIGH)
         time.sleep(duration)
-        GPIO.output(lf, GPIO.LOW)
-        GPIO.output(rr, GPIO.LOW)
+        GPIO.output(13, GPIO.LOW)
+        GPIO.output(12, GPIO.LOW)
 
     elif wheel_dir == ('lr', 'rf'):
         print 'Leftward pivot for {} seconds'.format(duration)
-        GPIO.output(lr, GPIO.HIGH)
-        GPIO.output(rf, GPIO.HIGH)
+        GPIO.output(11, GPIO.HIGH)
+        GPIO.output(15, GPIO.HIGH)
         time.sleep(duration)
-        GPIO.output(lr, GPIO.LOW)
-        GPIO.output(rf, GPIO.LOW)
+        GPIO.output(11, GPIO.LOW)
+        GPIO.output(15, GPIO.LOW)
