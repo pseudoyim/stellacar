@@ -30,7 +30,7 @@ GPIO.setup(rr, GPIO.OUT)
 def wheel(wheel_dir, duration):
 
     # Duration is initially received as a str.
-    duration = int(duration)
+    duration = float(duration)
     
     if wheel_dir == ('lf','rf'):
         print 'Forward for {} seconds'.format(duration)
