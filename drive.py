@@ -1,6 +1,8 @@
 '''
 Allows user to input (via CLI) a series of commands to have the car execute when run.
 '''
+import stellacar
+
 
 def commands():
 
@@ -15,7 +17,7 @@ def commands():
 		print ''
 		print '----------------------------Command # {}--------------------------'.format(counter)
 
-		direction = raw_input('Enter direction [(F)orward, (R)everse, (L)eft, (R)ight]: ').lower()
+		direction = raw_input('Enter direction [(F)orward, (B)ackward, (L)eft, (R)ight]: ').lower()
 
 		time = raw_input('Enter duration in seconds: ')
 
@@ -25,7 +27,7 @@ def commands():
 
 		print 'Current list of commands to execute: ', series
 
-		print '-----------------------------------------------------------------'
+		print '------------------------------------------------------------------'
 
 		done = raw_input('Do you want to enter another command? [(Y)es, (N)o]').lower()
 
@@ -41,4 +43,9 @@ def commands():
 
 
 if __name__ == '__main__':
+	
+	print ''
+	print '****************************** Hi, Stella! *****************************'
+	print ''
+
 	commands()
