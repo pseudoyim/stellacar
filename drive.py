@@ -57,16 +57,16 @@ def commands():
 def translate_commands_to_wheel(pair):
 
 	if pair[0] == 'f':
-		wheels_dir = (lf,rf)
+		wheels_dir = ('lf','rf')
 
 	elif pair[0] == 'b':
-		wheels_dir = (lr,rr)
+		wheels_dir = ('lr','rr')
 
 	elif pair[0] == 'r':
-		wheels_dir = (lf, rr)
+		wheels_dir = ('lf', 'rr')
 
 	elif pair[0] == 'l':
-		wheels_dir = (lr, rf)
+		wheels_dir = ('lr', 'rf')
 
 	# Return the tuble of (wheels & dirs) and the duration.
 	return wheels_dir, pair[1]
