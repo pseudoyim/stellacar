@@ -1,7 +1,7 @@
 '''
 Allows user to input (via CLI) a series of commands to have the car execute when run.
 '''
-from stellacar import wheel
+from wheels import wheel
 
 
 def commands():
