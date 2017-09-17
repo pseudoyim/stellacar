@@ -48,7 +48,6 @@ def commands():
 
 		# Execute translated commands.
 		for each in series_for_wheels_to_execute:
-			print each
 			wheel(each[0], each[1])
 
 		print 'All done!'
